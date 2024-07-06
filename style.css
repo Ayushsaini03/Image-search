@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    box-sizing:border-box;
+}
+
+body{
+    color: #050404;
+    background-image: url(wallpaperflare.com_wallpaper\ \(3\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto 50px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 75px;
+}
+
+.header-image {
+    margin-left: 20px; /* Adjust the margin as needed */
+    max-height: 75px; /* Adjust the height to match your h1 size */
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-left {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-right {
+    text-align: right;
+}
+/* h1{
+    text-align: center;
+    margin: 100px auto 50px;
+    font-weight: 600;
+    font-size: 75px;
+} */
+form{
+    width:90%;
+    max-width: 600px;
+    margin: auto;
+    height: 50px;
+    background: #9aacde;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+form input{
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    color: #000000;
+    font-size: 18px;
+    padding:0 30px ;
+    border-radius: 10px;
+}
+form button{
+
+    padding: 0 40px;
+    height: 100%;
+    background: #738ac7;
+    color: #ffff;
+    font-size: 18px;
+    border: 0;
+    outline: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+}
+
+::placeholder{
+    color: #ffff;
+    font-size: 18px;
+}
+#load-more{
+    background: #e64833;
+    color: #ffff;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px auto 100px;
+    cursor: pointer;
+    display: none;
+}
+
+#search-result{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+#search-result img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 5px;
+    
+}
+
+
+@media screen and (max-width: 790px){
+    h1{
+        text-align: center;
+        font-size: 60px;
+    }
+    
+}
+@media screen and (max-width: 580px){
+    h1{
+        text-align: center;
+        font-size: 45px;
+    }
+    .header-image{
+        height: 50px;
+        
+    }
+    form input{
+        padding:5px 5px 5px 5px;
+    }
+    
+}
+@media screen and (max-width:430px){
+    h1{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:550px){
+    #search-result{
+        grid-gap: 5px;
+        grid-template-columns: 5fr  ;
+    }
+    #search-result img{
+        width: 100%;
+        height: 200px;
+        object-fit:cover;
+    }
+}
+
